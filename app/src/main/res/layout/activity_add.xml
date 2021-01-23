@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/guideline63"
+                app:layout_constraintStart_toStartOf="@id/guideline53"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+                <EditText
+                    android:id="@+id/tourName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/border"
+                    android:drawableEnd="@drawable/ic_baseline_image_24"
+                    android:drawableRight="@drawable/ic_baseline_image_24"
+                    android:ems="10"
+                    android:hint="Название тура"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/numberOfPeople"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/border"
+                    android:drawableEnd="@drawable/ic_baseline_group_24"
+                    android:drawableRight="@drawable/ic_baseline_group_24"
+                    android:ems="10"
+                    android:hint="Макс кол-во людей"
+                    android:inputType="number"
+                    android:padding="10dp" />
+
+                <EditText
+                    android:id="@+id/phoneNumber4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/border"
+                    android:drawableEnd="@drawable/ic_baseline_call_24"
+                    android:drawableRight="@drawable/ic_baseline_call_24"
+                    android:ems="10"
+                    android:hint="Номер телефона"
+                    android:inputType="number|phone"
+                    android:padding="10dp" />
+
+                <EditText
+                    android:id="@+id/tourData"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/border"
+                    android:drawableEnd="@drawable/ic_baseline_calendar_today_24"
+                    android:drawableRight="@drawable/ic_baseline_calendar_today_24"
+                    android:ems="10"
+                    android:hint="Дата"
+                    android:padding="10dp" />
+
+                <EditText
+                    android:id="@+id/tourDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/border"
+                    android:drawableEnd="@drawable/ic_baseline_info_24"
+                    android:drawableRight="@drawable/ic_baseline_info_24"
+                    android:gravity="left"
+                    android:hint="Описание тура"
+                    android:padding="10dp" />
+
+                <EditText
+                    android:id="@+id/tourPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/border"
+                    android:drawableEnd="@drawable/ic_baseline_monetization_on_24"
+                    android:drawableRight="@drawable/ic_baseline_monetization_on_24"
+                    android:ems="10"
+                    android:hint="Стоимость"
+                    android:inputType="number"
+                    android:padding="10dp" />
+
+                <Button
+                    android:id="@+id/addPhoto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/green_border"
+                    android:drawableEnd="@drawable/ic_baseline_add_a_photo_24"
+                    android:drawableRight="@drawable/ic_baseline_add_a_photo_24"
+                    android:padding="10dp"
+                    android:text="Добавить фотографии"
+                    android:textColor="@color/colorGreen" />
+
+                <ImageView
+                    android:id="@+id/photoIv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:padding="10dp"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+                <Button
+                    android:id="@+id/saveTour"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/button_border"
+                    android:padding="10dp"
+                    android:text="Сохранить"
+                    android:textColor="@color/colorWhite" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/backButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toTopOf="@+id/guideline38"
+                app:layout_constraintEnd_toStartOf="@+id/guideline53"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_baseline_arrow_back_24"
+                tools:ignore="VectorDrawableCompat" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline53"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.15" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline63"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.85" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline38"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.1" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <include
+            layout="@layout/bottom_sheet"
+            android:clickable="false" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</ScrollView>
+
+
+

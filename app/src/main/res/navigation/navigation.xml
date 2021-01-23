@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.nurflower.anytravel.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_registrationFragment"
+            app:destination="@id/registrationFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_recoverFragment"
+            app:destination="@id/recoverFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="com.nurflower.anytravel.RegistrationFragment"
+        android:label="fragment_registration"
+        tools:layout="@layout/fragment_registration" >
+        <action
+            android:id="@+id/action_registrationFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_registrationFragment_to_loginFragment2"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.nurflower.anytravel.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" />
+    <fragment
+        android:id="@+id/recoverFragment"
+        android:name="com.nurflower.anytravel.RecoverFragment"
+        android:label="fragment_recover"
+        tools:layout="@layout/fragment_recover" >
+        <action
+            android:id="@+id/action_recoverFragment_to_userPasswordFragment"
+            app:destination="@id/userPasswordFragment" />
+        <action
+            android:id="@+id/action_recoverFragment_to_userPasswordFragment2"
+            app:destination="@id/userPasswordFragment" />
+        <action
+            android:id="@+id/action_recoverFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userPasswordFragment"
+        android:name="com.nurflower.anytravel.UserPasswordFragment"
+        android:label="fragment_user_password"
+        tools:layout="@layout/fragment_user_password" >
+        <action
+            android:id="@+id/action_userPasswordFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_userPasswordFragment_to_recoverFragment"
+            app:destination="@id/recoverFragment" />
+        <action
+            android:id="@+id/action_userPasswordFragment_to_loginFragment2"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment2"
+        android:name="com.nurflower.anytravel.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment2_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_profileFragment2_to_loginFragment2"
+            app:destination="@id/loginFragment" />
+    </fragment>
+</navigation>
